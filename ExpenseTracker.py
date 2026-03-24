@@ -12,7 +12,7 @@ def show_expenses():
         print("Expenses not add yet...")
     else:
         for i, expense in enumerate(expenses):
-            print(f"{i+1}. {expense["Name"]} - ₹{expense["Amount"]}")
+            print(f"{i+1}. {expense['Name']} - ₹{expense['Amount']}")
 
 def total_expense():
     total = sum(expense["Amount"] for expense in expenses)
